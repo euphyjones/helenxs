@@ -1,0 +1,173 @@
+                         /* SCROLLBAR & TOOLTIP */
+ 
+ 
+                         ::-webkit-scrollbar { width:2px; background: transparent; }
+
+                         ::-webkit-scrollbar-thumb { background-color:transparent; }
+                     
+                         
+                          
+                                                         /* BODY */
+                                                         
+                                                         
+                         body {  background-color:#C0E7FF /*HERE GOES THE BG COLOR*/; color:#383838 /*HERE GOES THE TEXT COLOR*/; font-family: 'Courgette', cursive; font-size:10px; font-size:10px; font-weight:lighter; letter-spacing:1px; line-height:20px; text-align:justify;}
+                          
+                         a { text-decoration:none; color: #383838 /*HERE GOES THE LINKS COLOR*/; -webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; }
+                          
+                         a:hover { color: #6186bb /*HERE GOES THE LINKS HOVER COLOR*/; -webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; }
+                         
+                         li { margin-left:5px; padding-left:5px; width:90%; text-align:left;}
+                          
+                         blockquote { border-left:1px solid #313131 /*HERE GOES THE CONTAINER BORDER COLOR*/; margin-left:10px; padding-left:10px; width:90%; }
+                          
+                         blockquote blockquote { border-left:1px solid #525252 /*HERE GOES THE CONTAINER BORDER COLOR*/; margin-left:3px; }
+                            
+                         small, sup, sub { font-size:10px; }
+                            
+                         b, strong { font-style:bold; color:#6186bb /*HERE GOES THE ACCENT COLOR*/; }
+                         
+                         i, em { color:#6186bb /*HERE GOES THE ACCENT COLOR*/; text-decoration:italic; }
+                         
+                         
+                         h1 { font-size: 12px; margin:auto; font-family: 'Poppins', sans-serif; padding-bottom:5px; text-transform:uppercase; color:#6186bb /*HERE GOES THE ACCENT COLOR*/; }
+                         
+                         header {
+                            width:100%;
+                            height:90px;
+                            top:0;
+                            left:0;
+                            position:fixed;
+                            display:block;
+                            z-index:999999;
+                            background-repeat:repeat-x;
+                            -webkit-box-sizing: border-box;    
+                            -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                         }
+                         
+                         .lace {
+                             background-image:url(https://i.ibb.co/pK9t9N1/laceblue.gif);
+                         }
+                         
+                         .svz { position:absolute; top:-1px; left:-1px;}
+                                                         /* CONTAINER */
+                                                         
+                         #container { position:absolute; margin:auto; left:0px; right:0px; top:0px; bottom:0px; width:590px; height:450px; background-color:#EEEEEE/*HERE GOES THE CONTAINER BG COLOR*/; background-image: url('https://64.media.tumblr.com/5ea8ecef8aa6368eaa4bb79b0613f1d9/5acaddbb2f5bdb79-07/s640x960/3d82d481d0d2098b4fdfd619294f74fbbecad08d.png'); overflow: hidden; padding:10px; border: 1px solid #ededed /*HERE GOES THE CONTAINER BORDER COLOR*/; border-top-left-radius:50px; border-bottom-right-radius:50px; }
+                         
+                         
+                                                         /* SIDEBAR */
+                                                         
+                         #sidebar { position:absolute; top:-1px; left:-1px; width:290px; height:610px; border: 1px solid transparent; }
+                         
+                                                      /* SIDEBAR — DOTS */
+                                                      
+                         .dots { position:absolute; top:-20px; left:-5px; width:300px; height:610px; overflow:hidden;letter-spacing:25px; line-height:30px; color:white /* DOTS COLOR */; animation-name: floating; animation-duration: 4s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
+                         
+                         @keyframes floating {
+                             0% { transform: translate(0,  0px); }
+                             50%  { transform: translate(0, 17px); }
+                             100%   { transform: translate(0, -0px); }    
+                         }
+                         
+                                                   /* SIDEBAR — FOLDERS */
+                         
+                         .folders { position:absolute; top:5px; left:28px; width:90px; height:400px; padding:5px; transition: transform 0.5s;  }
+                         
+                         .folders:hover { z-index: 100; }
+                         
+                         #icon0:before { position:absolute; top:20px; font-size:50px; font-family:'cappuccicons'; color:#6186bb /*FOLDER ICON COLOR*/; }
+                         
+                         #icon0 p { position:absolute; top:62px; left:5px; font-size:9px; font-family:arial, sans-serif; letter-spacing:2px; font-weight:bold;}
+                         
+                         #icon1:before { position:absolute; top:120px; font-size:50px; font-family:'cappuccicons'; color:#6186bb /*FOLDER ICON COLOR*/;}
+                         
+                         #icon1 p { position:absolute; top:162px; left:5px; font-size:10px; font-family:arial, sans-serif; letter-spacing:2px; font-weight:bold; }
+                         
+                         #icon2:before { position:absolute; top:230px; font-size:50px; font-family:'cappuccicons'; color:#6186bb /*FOLDER ICON COLOR*/; }
+                         
+                         #icon2 p { position:absolute; top:272px; left:5px; font-size:10px; font-family:arial, sans-serif; letter-spacing:2px; text-transform:lowercase; font-weight:bold;}
+                         
+                                                       /* SIDEBAR — CAMERA */
+                                                       
+                         #cam { position:absolute; top:50px; left:62px; width:200px; height:400px; border:1px solid #eaeaea /*HERE GOES THE CAMERA BORDER COLOR*/; border-radius:20px; background-color: rgba(255, 255, 255, .45); backdrop-filter: blur(5px); overflow:hidden;}
+                         
+                         #caminfo { position:absolute; top:0px; left:0px; width:191px; height:24px; font-size:10px; text-align:left; padding-left:10px; padding-top:6px; font-family: 'Poppins', sans-serif; color:#383838 /*THE CAMERA TEXT COLOR*/; background-color:transparent; text-transform:uppercase;}
+                         
+                         #camborder { position:absolute; top:-10px; left:0px; width:201px; height:40px; border-bottom:1px solid white /*HERE GOES THE CAMERA BORDER COLOR*/;}
+                         
+                         #circle span:before { position:absolute; top:10px; right:15px; font-size:8px; font-family:'cappuccicons'; color:#6186bb /*CIRCLE ICON COLOR*/ }
+                         
+                         #circle1 span:before { position:absolute; top:10px; right:25px; font-size:8px; font-family:'cappuccicons'; color:#bcc5fe /*CIRCLE2 ICON COLOR*/ }
+                         
+                         .blur { position:absolute; top:90px; margin:center; width:190px; height:190px; border-radius:50%; filter: blur(41px); opacity:0.7; background-color:#486389 /*BLUR COLOR*/;}
+                         
+                         #img { position:absolute; top:30px; width:200px; height:376px; }
+                         
+                         #deco1 { position:absolute; top:30px; left:55px; width:0px; height:400px; border-left:1px solid white /*HERE GOES THE CAMERA BORDER COLOR*/; }
+                         
+                         #deco2 { position:absolute; top:30px; right:55px; width:0px; height:400px; border-left:1px solid white /*HERE GOES THE CAMERA BORDER COLOR*/; }
+                         
+                         #deco3 { position:absolute; top:125px; width:301px; height:0px; border-top:1px solid white /*HERE GOES THE CAMERA BORDER COLOR*/; }
+                         
+                         #deco4 { position:absolute; bottom:125px; width:301px; height:0px; border-top:1px solid white/*HERE GOES THE CAMERA BORDER COLOR*/; }
+                         
+                         #boton #play-pause { position:absolute; bottom:25px; left:76px; width:40px; height:40px; background-color:#eaeaea/* HERE GOES THE CAMERA BUTTON COLOR*/; border-radius:50%; border:3px solid #6186bb /*HERE GOES THE CAMERA BUTTON BORDER COLOR*/; opacity:0.5;-webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;}
+
+                         #boton:hover {cursor:pointer; opacity:1;-webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;}
+   
+     }
+ .play {
+   background-image: url(https://i.ibb.co/p01bNkJ/playbutton.png);
+     }
+ .pause {
+   background-image: url(https://i.ibb.co/6YXxV6b/pause.png);
+     }
+   
+     
+                                               
+                         
+                                                         /* MUSIS BASE */
+                         
+                            /*    TABS STYLING-- BASE CODE BY ALYOFRP. DO NOT REMOVE THIS CREDIT!  */
+                         
+                         .tabzcon { /* tablinks content aka the box under the tablinks */ position:absolute; left:299px; right:0px; bottom:0px; top:-1px; padding:5px; height:450px; width:323px; background-color:transparent; border:1px solid transparent; z-index:100!important; }
+                         
+                         #musispics { position:absolute; top:-1px; right:25px; text-align:center; padding-top:15px; padding-left:3px; padding-right:3px; width:300px; height:455px; overflow:auto; overflow-x:hidden; z-index:2;}
+                         
+                         #musispics img { width:70px; height:70px; border-radius:50%; padding:5px; margin:5px; background-color:transparent; border:1px solid #6186bb /*HERE GOES THE BORDER COLOR OF THE CONEX PICS*/;  opacity:0.3;-webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;}
+                         
+                         #musispics img:hover { opacity:1;-webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;}
+                         
+                         #about {position:absolute; top:-1px; right:0px; text-align:center; padding-top:15px; padding-left:3px; padding-right:3px; width:350px; height:455px; z-index:2; background-color:transparent; border: 1px solid transparent; }
+                         
+                         #decoabout1 { position:absolute; top:30px; right:-59px; width:399px; height:60px; background:#27ADA4 /*DECO ABOUT BG COLOR*/; border-radius:50px; }
+                         
+                         #about .name { position:absolute; top:40px; right:35px; width:300px; height:auto; text-align:right; font-size:35px; font-family: 'Amatic SC', cursive; font-weight:bold; line-height:25px; letter-spacing:-1px;  text-transform:uppercase; font-style:italic; color:#fefefe /*NAME COLOR*/; }
+                         
+                         #about .info { position:absolute; top:67px; right:35px; text-align:right; font-family: 'Amatic SC', cursive; font-size:16px; text-transform:uppercase; color:#fefefe /*INFO COLOR*/;}
+                         
+                         #about .bio {position:absolute; top:79px; left:50px; width:250px; height:379px; padding:5px; overflow:auto; overflow-x:hidden; font-size:14px;}
+                         
+                         .bio p { text-align:justify; opacity:0.7;-webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; }
+                         
+                         .bio p:hover {opacity:1;-webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;}
+                        
+                         
+                         .imagencita { 
+                            height: 200px;
+                            position: absolute;
+                            left: 35px;
+                            bottom: 30px;
+                            margin-block-end: 0;
+                            }
+
+                         .alien { width: 70px;
+                          }
+
+                          .bandage { width: 70px;
+                          }
+
+                          .botoncito { font-size: 14px;}
+
+                          
+
